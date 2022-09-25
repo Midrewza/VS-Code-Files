@@ -1,1 +1,5 @@
-This repository will follow the production of creating my resume in HTML/CSS format. This will be one of my first solo projects.
+This repository will follow the production of creating:
+1. My Resume in HTML/CSS format
+2. ZTM 21 Day Challenge
+
+This will be one of my first solo projects
