@@ -1,0 +1,18 @@
+span {
+    color: gold;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+span:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+html {
+    background-color: black;
+}
