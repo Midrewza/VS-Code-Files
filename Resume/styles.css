@@ -12,5 +12,9 @@ h2, p, ul {
 
 th {
     text-align: left;
+    background-color: lightgrey;
 }
 
+ul {
+    margin-bottom: 25px;
+}
