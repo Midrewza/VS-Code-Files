@@ -1,18 +1,38 @@
-span {
-    color: gold;
+/* #myhover {
+    color: orange;
     font-weight: bold;
+    width: 100px;
+    height: 100px;
+    transition: width 2s;
     font-size: 32px;
 }
 
-span:hover {
-    background-color: greenyellow;
-    color: white;
-}
+#myhover:hover {
+    font-size: 32px;
+    color:#000;
+    cursor:pointer;
+    transition-duration: 2s;
+    transition:all 2s ease-in-out;
+    font-weight: 700;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom 10%;
+    background-image: linear-gradient(to top,#5ef01b 90%,transparent 0);
+} */
 
-p {
-    color: white;
+#myhover {
+    font-size:45px;
+    color:orange;
+    font-weight:700;
+    background-size:1% 0;
+    background-repeat:no-repeat;
+    background-position:left bottom 10%;
+    background-image:linear-gradient(to top,#5ef01b 90%,transparent 0)
 }
-
-html {
-    background-color: black;
+    
+#myhover:hover {
+    color:#000;
+    cursor:pointer;
+    background-size:100% 100%;
+    transition:all .9s ease-in-out;  
 }
