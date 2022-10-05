@@ -48,7 +48,13 @@ h1 {
 
 .left_arm { 
 	margin-right: 10px; 
+	transform-origin: top;
+	transition: transform 1s;
 } 
+
+.left_arm:hover {
+	transform: rotate(135deg) translate(10px, -25px);
+}
 
 .right_arm { 
 	margin-left: 10px; 
