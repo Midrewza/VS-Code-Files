@@ -113,9 +113,18 @@ blockquote cite:before {
     margin-right: 5px;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-    body {
-        background-color: blue;
+@media screen and (max-width: 480px) {
+    .btn {
+        display: block;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    section {
+        padding: 25px 0 15px 0;
     }
 }
-
