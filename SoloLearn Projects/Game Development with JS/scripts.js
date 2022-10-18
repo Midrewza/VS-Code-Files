@@ -11,6 +11,8 @@ window.onload = function() {
     let btn = document.getElementById("jump");
     let count = 0;
 
+    var t = Date.now();
+    var speed = 25;
     // btn.onclick = function() {
     //     count += 1;
     //     // changing the y position
@@ -38,6 +40,18 @@ window.onload = function() {
         count += 1;
         y -= 25;
         function draw() {
+            var timePassed = (Date.now() - t) / 1000;
+            t = Date.now(); 
+            
+            if(y <= 350) {
+                speed += 50 * timePassed;
+                y += speed*timePassed;
+            } 
+
+            if(y > 350) {
+                count = 0
+            } 
+
             // clearing the canvas
             context.clearRect(0, 0, 600, 400);
     
@@ -57,9 +71,21 @@ window.onload = function() {
             draw();
     }
     document.ontouchstart = function() {
-            count += 1;
-            y -= 25;
+        count += 1;
+        y -= 25;
         function draw() {
+            var timePassed = (Date.now() - t) / 1000;
+            t = Date.now(); 
+            
+            if(y <= 350) {
+                speed += 50 * timePassed;
+                y += speed*timePassed;
+            } 
+
+            if(y > 350) {
+                count = 0
+            } 
+
             // clearing the canvas
             context.clearRect(0, 0, 600, 400);
     
